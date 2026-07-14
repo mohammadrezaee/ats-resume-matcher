@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ats-resume-matcher"
+version = "0.1.0"
+description = "Compare a resume PDF with a job description using TF-IDF similarity."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "Mohammad Rezaee" },
+  { name = "Hadis Arefanjazi" }
+]
+dependencies = [
+  "pypdf",
+  "scikit-learn"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest"
+]
+
+[project.scripts]
+ats-resume-matcher = "ats_resume_matcher.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
