@@ -1,17 +1,12 @@
 # ATS Resume Matcher
 
-A simple Python tool that compares a resume PDF with a job description and returns a resume match score.
+A Python tool that compares a resume PDF with a job description and returns a resume match score.
 
 The project uses:
 
 - `pypdf` to extract text from a resume PDF
 - `scikit-learn` TF-IDF vectors to represent the resume and job description
 - cosine similarity to calculate the match score
-
-## Authors
-
-- Mohammad Rezaee
-- Hadis Arefanjazi
 
 ## Installation
 
