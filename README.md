@@ -71,3 +71,5 @@ pytest
 - The score is based on word overlap and TF-IDF similarity, not a full ATS system.
 - PDF extraction quality depends on the resume PDF format.
 - The tool does not rewrite resumes or guarantee hiring outcomes.
+
+## Collaberation
